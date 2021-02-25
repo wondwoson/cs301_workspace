@@ -1,5 +1,6 @@
 const prompt=require("prompt-sync")();
-let status=+prompt("enter the staus of the borrowe");
+let numberofbookoverdue=+prompt("enter number of bookoverdue");
+let status=prompt("enter the staus of the borrower ");
 let loandurationinweek;
 if(status=="student" && numberofbookoverdue==0){
     loandurationinweek=6;
@@ -22,4 +23,4 @@ else if(status=="student" && numberofbookoverdue>=3){
 }else if(status=="other" && numberofbookoverdue>=3){
     loandurationinweek=2;
 }
-console.log(loandurationinweek);
+console.log("loan duration in week is :"+loandurationinweek);
