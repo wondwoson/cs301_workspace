@@ -9,7 +9,7 @@ downpayment=2000+0.15*(costofhouse-100000);
 }else if(costofhouse>50000 && costofhouse<100000){
 downpayment=1000+0.1*(costofhouse-50000);   
 }else if(costofhouse>0 && costofhouse<50000){
-    downpayment=0.05*costofhouse;
+   downpayment=0.05*costofhouse;
 }
 
 
