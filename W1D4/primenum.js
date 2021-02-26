@@ -1,11 +1,8 @@
 const prompt=require("prompt-sync")();
-let i=1;
-while(i<=num){
-    let num = +prompt("enter the number here: ");
-    if(num/i==1 && num%2!==0){
-    console.log(num+" :This number is prime");
-    continue;
-    i++;
+let num = prompt("enter the number here: ");
+for(let i=2;i<=num/2;i++){
+    if(num%2==0){
+        console.log(num+" :This number is not prime");    
+    }
 }
-}
-    console.log(num+" :this number is not prime");
+ console.log(num+" :this number is prime");
