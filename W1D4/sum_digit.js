@@ -7,4 +7,4 @@ let digit;
         sum += digit;
         n = (n - digit) / 10;
     }
-    console.log(sum);
+    console.log(n);
