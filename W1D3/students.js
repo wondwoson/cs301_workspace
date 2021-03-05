@@ -1,7 +1,7 @@
 
 const prompt=require("prompt-sync")();
 let credeit=prompt("enter crediet hour of the course ");
-let name=prompt("enter the name of the student ")
+let name=prompt("enter the name of the student ")rr
 let label;
 if(credeit>90){
 label="Senior";
