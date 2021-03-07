@@ -1,0 +1,14 @@
+{
+  "name": "w2d4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrayclass.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.3.0"
+  }
+}

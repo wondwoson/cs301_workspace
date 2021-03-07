@@ -1,3 +1,9 @@
+"use strict";
+/*@description excercise done for revision
+@param n is a number
+@return {boolean}to retrn a number 
+
+*/
 const prompt =require ("prompt-sync")();
 /*while(true){
     let input=prompt("enter input here: ")

@@ -19,6 +19,6 @@ function arrayEqual(firstarray,secoundArray){
     }
 return true;
 }
-    
+
 
 console.log(arrayEqual(arr1,arr2));
