@@ -1,15 +1,19 @@
 /*eslint-disable*/
-/*
+
 function findMin(arr){
     let min=arr[0];
+    let secondMin=arr[0];
     for(let i=0;i<arr.length;i++){
-        if(arr[i]<min){
+        if(arr[i]<secondMin){
+            secondMin=arr[i];
+        }if(secondMin<min){
+            secondMin=min;
             min=arr[i];
         }
     }
-    return min;
+    return secondMin;
 }
-console.log(findMin([1,-5,8,7,-1,6]));*/
+console.log(findMin([1,-5,8,7,-1,6]));
 //function ispalendrom() {
    /* let score=[];
     let sum=0;
@@ -22,10 +26,10 @@ console.log(findMin([1,-5,8,7,-1,6]));*/
     console.log(average);*/
 
 //console.log(ispalendrom());
-let arr=[1,2,3,4,8,7];
+/*let arr=[1,2,3,4,8,7];
 let copy=[];
 for(let i =arr.length-1;i>=0;i--){
     console.log(arr[i]+" ,");
 }
-    ;
+*/
 

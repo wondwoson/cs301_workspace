@@ -16,9 +16,10 @@ function dup(ary) {
     return counter;
 }
 
+console.log(dup([2,-1,1,4,3,1,1,9,6,6,5,-1,2]));
 
 
-function findMax(ary) {
+/*function findMax(ary) {
     let max = ary[0];
     for (let i = 0; i < ary.length; i++) {
         if (ary[i] > max) {
@@ -26,7 +27,7 @@ function findMax(ary) {
         }
     }
     return max;
-}
+}*/
 
 function findSecondMax(ary) {
     if (ary.length < 1) {
@@ -46,4 +47,4 @@ function findSecondMax(ary) {
     return secondMax;
 }
 
-console.log(findSecondMax([2,-1,1, 4,3,1,1,9,5,-1,2]));
+console.log(findSecondMax([2,-1,1, 4,3,1,1,9,6,-1,2]));
