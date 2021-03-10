@@ -1,9 +1,16 @@
 /*eslint-disable*/
-function findPower(b,p){
-if(n=0){
-    return 1;
-}else{
-    return b*findPower(b,p-1)
+const prompt =require("prompt-sync")();
+let str;
+let arry =[];
+do{
+    str=prompt("enter text here :");
+    arry.push(str);
+}while(str!=="");
+arry.pop();
+console.log(arry);
+let rev = [];
+for(let i=arry.length-1;i>=0;i--){
+   rev.push(arry[i]);
 }
-}
-console.log(findPower(2,3));
+
+console.log(rev);

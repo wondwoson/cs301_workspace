@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const prompt=require("prompt-sync")();
 let num = prompt("enter the number here: ");
 for(let i=2;i<=num/2;i++){

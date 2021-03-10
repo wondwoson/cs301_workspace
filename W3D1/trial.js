@@ -111,17 +111,39 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 return arr;
 }
 console.log(copyOddnumber([1,2,3,4,5,6,7,8]));*/
-function countDuplicate(arr){
-    let count=0;
+/*function countDuplicate(arr){
+    let count=0;counti=0;countj=0;
     for(let i=0;i<arr.length;i++){
-        for(let j=i+1;j<arr.length;i++){
-            if(arr[i]===arr[j] && i!==j){
-                count++;
+        counti++;
+        for(let j=i+1;j<arr.length;j++){
+            if(arr[i]===arr[j]){
+                count++;countj++;
             }
         }
     }
-    return count;
+    return "is written "+count + "times"+ arr[i][j].length-counti+ " "+countj;
 }
-console.log(countDuplicate([1,1,2]))
+console.log(countDuplicate([1,1,7,9,7,5,6,5,2]))
 
+}
+*/
+/*let person1={
+    name: "Allen",
+    age: 23,
+    employed: true,
+    }
+    let person2 = {
+    name: "Allen",
+    age: 23,
+    employed: true,
+    }
+    console.log(person1 === person2);
+    person1.age = 35;
+    console.log(person2.age);
+    person2.salary = 5000;
+    console.log(person1.salary)*/
     
+    
+    let array=[1,2,3,45]
+    array.splice(1,array.length)
+    console.log(array);
