@@ -33,7 +33,7 @@ console.log(rev);*/
 
 //how to find duplicate value using double loop
     /*function countDuplicate(arr) \n    
-        let count=0;
+        let count=0;let temp=[]
         for(let i=0;i<arr.length;i++){
             for(let j=i+1;j<arr.length;j++){
                 if(arr[i]==arr[j]){
@@ -44,7 +44,7 @@ console.log(rev);*/
         return count;
     }
     console.log(countDuplicate([1,1,2,4,5,5,8,7,9,2]))*/
-    /*let a = 5;
+    let a = 5;
     let b = 7;
     console.log(a,b);
     swap1(a,b);
@@ -62,7 +62,7 @@ console.log(rev);*/
     let temp = arr[i];
     arr[i]= arr[j];
     arr[j]= temp;
-    }*/
+    }
     /*function sortArray(array){
         for(let i=0;i<array.length;i++){
             let temp=array[i];
@@ -136,16 +136,21 @@ console.log(sum);*/
     console.log(deleteArrayElement([1,2,3,4,5]));*/
 
     function twoCommonElmnt(arr1,arr2){
+        let arr=[];
         for(let i=0;i<arr1.length;i++){
             for(let j=0;j<arr2.length;j++){
-            if(arr1[i]==arr2[j]){
-                return arr2[j]
+            if(arr1[i]===arr2[j]){
+                arr.push(arr2[j])
                 
             }
         } 
+        return arr;
     }
 }
-    console.log(twoCommonElmnt[1,3,5,8,7],[7,5,9,7,1,5])
+let x=[1,3,5,8,7];
+let y=[7,5,9,7,1,5];
+console.log(twoCommonElmnt(x,y));
+
     /*emp={id:102,name:"Shyam Kumar",salary:40000}  
 console.log(emp.id+" "+emp.name+" "+emp.salary);
  emp.nationality="English";//---------to add property----
@@ -156,4 +161,49 @@ for(x in emp){
     count++;
 }
 console.log(count);
-*/
+
+
+
+
+console.log(isSumOfPrimeEven([1,8,4,6,10,8]))*/
+function isPrime(num){
+    let count=0;
+    for(let i=1;i<=num;i++){
+        if(num%i===0){
+            count++;
+        }
+    }
+    if(count===2){
+        return true;
+    }
+    return false;
+}
+console.log(isPrime());
+function sumPrimeInd(arr){
+    let sumatprime=0;
+    for (let i=0;i<arr.length;i++){
+        if(isPrime(i)===true){
+            sumatprime+=arr[i];
+        }
+    }
+    return sumatprime;
+}
+console.log(sumPrimeInd([1,5,6,7,8,3]));
+function findnumberOfEvenValues(n) {
+    let arr=[];
+    let count=0;
+    for(let i=2;i<=n;i++){
+        if(i%2==0){
+            arr.push(i);
+        }
+    }
+    let max=arr[0];
+    for(let i=0;i<arr.length;i++){
+    if(arr[i]>max){
+        max=arr[i];
+    }
+   
+}
+return max;
+}
+console.log(findnumberOfEvenValues(29));
