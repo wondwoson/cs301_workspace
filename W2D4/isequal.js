@@ -1,6 +1,6 @@
 "use strict";
 let arr1=[1,2,3];
-let arr2=[1,2,4];
+let arr2=[1,2,3];
 /**
  * @description comparing array
  * @returns { boolean } hhh

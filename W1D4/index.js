@@ -1,3 +1,4 @@
+/*eslint-disable*/
 let prompt=require('prompt-sync')();
 
 let count=1;
